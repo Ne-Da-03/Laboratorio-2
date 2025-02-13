@@ -1,0 +1,56 @@
+# Formato Markdown (MD) - README
+
+## Preguntas y respuestas
+
+### ¿Para qué crees que se usan los operadores lógicos en programación?
+Los operadores lógicos se usan en programación para evaluar expresiones condicionales y tomar decisiones en función de valores booleanos (`True` o `False`). Son esenciales para la construcción de estructuras de control como `if`, `while` y `for`.
+
+#### Ejemplo en Python:
+```python
+x = True
+y = False
+
+if x and not y:
+    print("Se cumple la condición")
+```
+
+---
+
+### ¿Por qué es importante declarar correctamente el tipo de dato de una variable?
+Declarar correctamente el tipo de dato de una variable es importante porque:
+1. **Evita errores:** Se minimizan problemas de incompatibilidad en operaciones.
+2. **Optimiza la memoria:** Se asigna el espacio adecuado según el tipo de dato.
+3. **Facilita la lectura del código:** Ayuda a otros desarrolladores a comprender mejor la intención del programa.
+
+#### Ejemplo en Python:
+```python
+numero = 10       # Entero
+texto = "Hola"   # Cadena de texto
+flotante = 3.14   # Decimal
+
+print(type(numero))   # <class 'int'>
+print(type(texto))    # <class 'str'>
+print(type(flotante)) # <class 'float'>
+```
+
+## Ejemplos de Scripts
+
+### Operadores Lógicos en Uso
+```python
+edad = 20
+es_estudiante = True
+
+if edad >= 18 and es_estudiante:
+    print("Eres mayor de edad y estudiante")
+else:
+    print("No cumples ambas condiciones")
+```
+
+### Uso Correcto de Tipos de Datos
+```python
+def calcular_area_circulo(radio: float) -> float:
+    return 3.1416 * radio ** 2
+
+radio = 5.0
+print(f"El área del círculo es: {calcular_area_circulo(radio)}")
+
